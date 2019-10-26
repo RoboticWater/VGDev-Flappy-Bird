@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class FlappyBird : MonoBehaviour
 {
     public float jumpForce = 200;
-    public PipeSpawner ps;
     public int score = 0;
     // Start is called before the first frame update
     void Start()
@@ -24,7 +23,6 @@ public class FlappyBird : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        // ps.spawnTime = 0;
         SceneManager.LoadScene(0);
     }
 
